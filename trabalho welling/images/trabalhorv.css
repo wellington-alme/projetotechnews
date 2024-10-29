@@ -1,0 +1,131 @@
+:root {
+    --yellow: #BFF009;
+    --gray: #868585;
+    --black: #1e1e1e;
+    --white: #ffffff;
+    --lightGray: #F2F2F2;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Space Grotesk", sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.header-container {
+    padding: 19px 0;
+}
+
+.header-content {
+    max-width: 1312px;
+    margin: 0 auto;
+    align-items: center;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 58px;
+}
+
+.navigation {
+    gap: 32px;
+    background-color: var(--lightGray);
+    padding: 16px;
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+}
+
+.navigation a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+.subscribe-link {
+    color: var(--black);
+    background-color: var(--yellow);
+    padding: 16px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.main-section {
+    max-width: 1312px;
+    margin: 64px auto;
+}
+
+.main-header {
+    text-align: center;
+}
+
+.main-header small {
+    padding: 8px;
+    background-color: var(--yellow);
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--black);
+}
+
+.main-header h1 {
+    font-size: 48px;
+    padding: 8px 0;
+}
+
+.main-header p {
+    font-size: 14px;
+    color: var(--gray);
+    max-width: 354px;
+    margin: 0 auto;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+
+.card-item {
+    width: 368px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    background-color: var(--lightGray);
+    border-radius: 8px;
+}
+
+.card-item:hover {
+    background-color: var(--black);
+}
+
+.card-item a {
+    color: var(--black);
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.card-item:hover a {
+    color: var(--white);
+}
+
+.card-item p {
+    color: var(--gray);
+    font-size: 14px;
+}
+
+.grid-layout {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+}
+
+.footer-section {
+    text-align: center;
+    background-color: var(--black);
+    color: var(--gray);
+    padding: 46px 0;
+}
